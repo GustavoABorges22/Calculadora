@@ -3,50 +3,54 @@
     <head>
         <title>Calculadora</title>
         <meta charset="UTF-8">
-        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/style.css">
     </head>
     <body>
-        <div class="row">
-            <div class="col-md-12">HISTORICO</div>
-        </div>
+        <div class="corpo">
+            <div class="row">
+                <div class="col-md-12"><input id = "visor" type="text" class="form-control" placeholder=""></div>
+            </div>
 
-        <div class="row">
-            <div class="col-md-12"><input id = "numeroDig" type="number" class="form-control" placeholder="0"></div>
-        </div>      
-        <div class="row">
-            <div class="col-xs-3"><button>CE</button></div>
-            <div class="col-xs-3"><button>C</button></div>
-            <div class="col-xs-3"><button>%</button></div>
-            <div class="col-xs-3"><button>/</button></div>
-        </div>
+            <div class="row">
+                <div class="col-md-12"><input id = "resultado" type="text" class="form-control" placeholder="0"></div>
+            </div>      
+            <div class="row">
+                <div class="col-xs-3"><button class="oper2" onclick="calcLimparCE()">CE</button></div>
+                <div class="col-xs-3"><button class="oper2" onclick="calcLimparC()">C</button></div>
+                <div class="col-xs-3"><button class="oper2" onclick="calcNum('%')">%</button></div>
+                <div class="col-xs-3"><button class="oper" onclick="calcNum('/')">/</button></div>
+            </div>
 
-        <div class="row">
-            <div class="col-xs-3"><button>7</button></div>
-            <div class="col-xs-3"><button>8</button></div>
-            <div class="col-xs-3"><button>9</button></div>
-            <div class="col-xs-3"><button>x</button></div>
-        </div>
+            <div class="row">
+                <div class="col-xs-3"><button class="num" onclick="calcNum('7')">7</button></div>
+                <div class="col-xs-3"><button class="num" onclick="calcNum('8')">8</button></div>
+                <div class="col-xs-3"><button class="num" onclick="calcNum('9')">9</button></div>
+                <div class="col-xs-3"><button class="oper" onclick="calcNum('*')">*</button></div>
+            </div>
 
-        <div class="row">
-            <div class="col-xs-3"><button>4</button></div>
-            <div class="col-xs-3"><button>5</button></div>
-            <div class="col-xs-3"><button>6</button></div>
-            <div class="col-xs-3"><button>-</button></div>
-        </div>
+            <div class="row">
+                <div class="col-xs-3"><button class="num" onclick="calcNum('4')">4</button></div>
+                <div class="col-xs-3"><button class="num" onclick="calcNum('5')">5</button></div>
+                <div class="col-xs-3"><button class="num" onclick="calcNum('6')">6</button></div>
+                <div class="col-xs-3"><button class="oper" onclick="calcNum('-')">-</button></div>
+            </div>
 
-        <div class="row">
-            <div class="col-xs-3"><button>1</button></div>
-            <div class="col-xs-3"><button>2</button></div>
-            <div class="col-xs-3"><button>3</button></div>
-            <div class="col-xs-3"><button>+</button></div>
-        </div>
+            <div class="row">
+                <div class="col-xs-3"><button class="num" onclick="calcNum('1')">1</button></div>
+                <div class="col-xs-3"><button class="num" onclick="calcNum('2')">2</button></div>
+                <div class="col-xs-3"><button class="num" onclick="calcNum('3')">3</button></div>
+                <div class="col-xs-3"><button class="oper" onclick="calcNum('+')">+</button></div>
+            </div>
 
-        <div class="row">
-            <div class="col-xs-3"><button>=</button></div>
-            <div class="col-xs-3"><button>+/-</button></div>
-            <div class="col-xs-3"><button>0</button></div>
-            <div class="col-xs-3"><button>,</button></div>
+            <div class="row">
+                
+                <div class="col-xs-3"><button class="num" onclick="maisMenos ()">+/-</button></div>
+                <div class="col-xs-3"><button class="num" onclick="calcNum('0')">0</button></div>
+                <div class="col-xs-3"><button class="num" onclick="calcNum('.')">.</button></div>
+                <div class="col-xs-3"><button class="igual" onclick="calcOper()">=</button></div>
+            </div>
         </div>
-        <script src="script.js"></script>
+        <script src="assets/js/script.js"></script>
     </body>
 </html>
