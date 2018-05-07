@@ -4,6 +4,7 @@
         <title>Calculadora</title>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+<<<<<<< HEAD
         <link rel="stylesheet" href="assets/css/style.css">
     </head>
     <body>
@@ -50,6 +51,51 @@
                 <div class="col-xs-3"><button class="num" onclick="calcNum('.')">.</button></div>
                 <div class="col-xs-3"><button class="igual" onclick="calcOper()">=</button></div>
             </div>
+=======
+    </head>
+    <body>
+        <div class="row">
+            <div class="col-md-12"><input id = "numeroDig" type="text" class="form-control" placeholder=""></div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12"><input id = "visor" type="text" class="form-control" placeholder="0"></div>
+        </div>      
+        <div class="row">
+            <div class="col-xs-3"><button>CE</button></div>
+            <div class="col-xs-3"><button class="num" onclick="calcLimpar()">C</button></div>
+            <div class="col-xs-3"><button class="oper" onclick="sinal('%')">%</button></div>
+            <div class="col-xs-3"><button class="oper" onclick="sinal('/')">/</button></div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-3"><input type="button" name="num7" class="num" value="7" onclick="calcNum(7)" /></div>
+            <div class="col-xs-3"><button class="num" onclick="calcNum(8)">8</button></div>
+            <div class="col-xs-3"><button class="num" onclick="calcNum(9)">9</button></div>
+            <div class="col-xs-3"><button class="oper" onclick="sinal('*')">x</button></div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-3"><button class="num" onclick="calcNum('4')">4</button></div>
+            <div class="col-xs-3"><button class="num" onclick="calcNum('5')">5</button></div>
+            <div class="col-xs-3"><button class="num" onclick="calcNum('6')">6</button></div>
+            <div class="col-xs-3"><button class="oper" onclick="sinal('-')">-</button></div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-3"><button class="num" onclick="calcNum('1')">1</button></div>
+            <div class="col-xs-3"><button class="num" onclick="calcNum('2')">2</button></div>
+            <div class="col-xs-3"><button class="num" onclick="calcNum('3')">3</button></div>
+            <div class="col-xs-3"><button class="oper" onclick="sinal('+')">+</button></div>
+        </div>
+
+        <div class="row">
+            
+            <div class="col-xs-3"><button class="oper" onclick="sinal('maisMenos')">+/-</button></div>
+            <div class="col-xs-3"><button class="num" onclick="calcNum(0)">0</button></div>
+            <div class="col-xs-3"><button class="num" onclick="calcNum('.')">,</button></div>
+            <div class="col-xs-3"><button class="oper" onclick="calcOper()">=</button></div>
+>>>>>>> d3304d63f4bb3e08f119eca304062825e9515e84
         </div>
         <script src="assets/js/script.js"></script>
     </body>
