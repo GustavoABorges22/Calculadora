@@ -1,6 +1,95 @@
-.general-body{
+body {
+    background: rgb(36, 35, 35);
+}
+#visor {
+    border: #ffffff;
+    border:0px;
+    color: #4e4e4e;
+    text-align: right;
+    /* padding: 20px; */
+    font-size: 12px; 
+
+}
+#resultado {
+    border: #ffffff;
+    border:0px;
+    color: #000000;
+    text-align: right;
+    /* padding: 40px; */
+    font-size: 20px; 
+
+
+}
+.corpo{
     display: inline-block;
-    border: 1px solid #000000;
-    padding: 300px;
+    padding: 20px;
     background-color: #ffffff;
+    border-radius: 30px;
+}
+
+.num{
+    width:40px;
+    height: 40px;
+    border:0px;
+    color: #b2b2b2;
+    background-color:#ffffff;
+    font-size: 25px;
+    font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+    margin-bottom: 5px;
+}
+
+.oper{
+    width:40px;
+    height: 40px;
+    border:0px;
+    background-color:#ffffff;
+    color: #ff718f;
+    font-size: 20px;
+    font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+    margin-bottom: 5px;
+}
+.oper2{
+    color: #201e1e;
+    font-size: 15px;
+   
+} 
+.igual{
+    width:40px;
+    height: 40px;
+    background-color: #ff6f6f;
+    border: 0px;
+    color: #ffffff;
+    text-align: center;
+    font-size: 25px;
+    border-radius: 50%;
+    box-shadow: 0px 4px 2px #f88c8c;
+    transition: all ease .2s;
+}
+
+.igual:hover{
+    box-shadow: 0px 6px 3px #f88c8c;
+    background-color: #f88c8c;
+}
+.num:hover{
+    background-color: #f88c8c;
+}
+.oper:hover{
+    background-color: #4e4e4e;
+}
+.oper2:hover{
+    background-color: #f88c8c;
+}
+
+.lin{
+    border-width: 0 0 1px 0;
+}
+
+hr {
+    height:0.5px;
+    border:none;
+    color:#c0b7b7;
+    background-color:#a5a3a3;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 0 15%;
 }
